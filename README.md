@@ -9,7 +9,7 @@ No seas boludo, no ejecutes el .exe porque asi no funciona.
 - Abri la carpeta target/release donde va aestar tu ejecutable
 - Abris una terminal en ese directorio, escribis el nombre de la aplicación, le pasas los argumentos (archivo y palabra para buscar) y listo.
 ### Para agregar al $PATH de modo que te funcione en todo el sistema
-- Fijate q onda linux, yo todavia no me fije, capaz con un export ya funca
+- En linux depende la shell, pero mete un echo $PATH y fijate si tu carpeta .local/bin/ esta dentro, sino podes meterla en /usr/local que tambien va; usá ln -s para armar un link simbólico y enlazalo a tu ejecutable que está dentro del repo, si es que queres rebuildear con cambios de forma facil
 - En windows haces lo siguiente
    - Te vas al disco C (o al disco donde tengas tus archivos de programa)
    - Creas una carpeta dentro de archivos de programa que se llame como la aplicacion (o como te pinte)
