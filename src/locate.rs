@@ -21,7 +21,7 @@ fn print_color(word_to_search: &str, line: &str){
     print!("\n");
 }
 
-pub fn begin_search<R: Read>(bf: BufReader<R>, word: &String) {
+pub fn begin_search<R: Read>(bf: BufReader<R>, word: &str) {
     let mut idx = 1;
 
     for line in bf.lines() {

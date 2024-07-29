@@ -25,7 +25,7 @@ fn main(){
                  std::process::exit(0);
              },
              _ => {
-                 eprintln!("Error en la inserción de argumentos: {}", e);
+                 eprintln!("{}", e);
                  std::process::exit(0);
              },
         },
@@ -33,7 +33,7 @@ fn main(){
     
     let f = match File::open(&args.path){
         Ok(f) => f,
-        Err(e) => panic!("Error: {}", e)
+        Err(e) => panic!("{}", e)
     };
     
     let bf = BufReader::new(f);
