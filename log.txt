@@ -10,3 +10,5 @@ legibilidad de codigo
 TODO!
 - Hacer que detecte todos las posibles instancias en una palabra de la busqueda
 - Hacer que sea compatible con el piping de linux
+- Cambios estéticos )?
+- Optimización 
