@@ -10,10 +10,9 @@ Es una aplicación de terminal (basicamente un CLI) que le pasas un archivo en a
 No seas boludo, no ejecutes el .exe porque asi no funciona.
 - Cloná el repo
 - Hacé un
-  
-´´´
+```
 cargo build --release
-´´´
+```
 
 - Abris una terminal en ese directorio (target/release/), escribis el nombre de la aplicación, le pasas los argumentos (archivo y palabra para buscar) y listo.
 ### Para agregar al $PATH de modo que te funcione en todo el sistema
