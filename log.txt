@@ -1,0 +1,12 @@
+Antes del 29/07: Se hizo el programa, con funcionalidades varias y que cumplian su cometido.
+
+29/07: Cambio en la detección de la palabra a buscar. Previamente, si una palabra tenia varias
+veces la misma palabra a buscar (ejemplo, se busca la letra a en anaconda), solamente resaltaba
+la primera instancia en la que aparecia y las otras las ignoraba. Ahora puede hacerlo
+parcialmente, encuentra todas las palabras donde aparece, pero si se repite en una sola palabra,
+solo encuentra la primera instancia. En otro tema, se separó en modulos para tener una mejor
+legibilidad de codigo
+
+TODO!
+- Hacer que detecte todos las posibles instancias en una palabra de la busqueda
+- Hacer que sea compatible con el piping de linux
