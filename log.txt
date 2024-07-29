@@ -12,3 +12,8 @@ TODO!
 - Hacer que sea compatible con el piping de linux
 - Cambios estéticos )?
 - Optimización 
+
+Tiempos de ejecución a comparación (promedio de 10 veces)
+
+|  Grep  |  Pyro  |
+|10.692ms|10.019ms|

@@ -5,6 +5,7 @@ fn print_color(word_to_search: &str, line: &str){
     for word in line.split_whitespace() {
         if !word.to_lowercase().contains(&word_to_search) {
             print!("{} ", word);
+
             continue;
         }
 
@@ -22,7 +23,7 @@ fn print_color(word_to_search: &str, line: &str){
 
 pub fn begin_search<R: Read>(bf: BufReader<R>, word: &String) {
     let mut idx = 1;
-    
+
     for line in bf.lines() {
         let line = line.unwrap();
         if line.to_lowercase().contains(word) {

@@ -1,2 +1,3 @@
 ## ignorar las builds locales del programa
 target/
+example.txt

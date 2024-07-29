@@ -14,8 +14,6 @@ struct Cli{
 fn main(){
     use locate::begin_search;
 
-      // esto capta los argumentos, se peude hacer con std::env
-      // tambien, la libreria lo simplifica
     let args = match Cli::try_parse() {
         Ok(cli) => cli,
         Err(e) => match e.kind() { ErrorKind::DisplayHelp => {
@@ -39,6 +37,15 @@ fn main(){
     };
     
     let bf = BufReader::new(f);
-    let lowc_word = &args.word.to_lowercase(); 
-    begin_search(bf, lowc_word);
+    let lowc_word = &args.word.to_lowercase();
+    #[cfg(debug_assertions)]
+    {
+        let t = std::time::Instant::now();
+        begin_search(bf, lowc_word);
+        println!("Tiempo en ejecución: {:?}", t.elapsed())
+    }  
+    #[cfg(not(debug_assertions))]
+    {
+        begin_search(bf, lowc_word);
+    }  
 }
